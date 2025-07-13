@@ -53,7 +53,7 @@ export class ProductServiceImpl implements ProductService {
         );
       }
 
-      await axios.put(`${this.productServiceUrl}/api/products/${productId}`, {
+      await axios.patch(`${this.productServiceUrl}/api/products/${productId}`, {
         inStock: newStock,
       });
 

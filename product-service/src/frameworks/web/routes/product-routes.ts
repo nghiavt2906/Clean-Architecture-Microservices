@@ -19,7 +19,7 @@ export function setupProductRoutes(
   router.get("/products", getAllProducts);
   router.get("/products/:id", getProduct);
   router.get("/products/category/:category", getProductsByCategory);
-  router.put("/products/:id", updateProduct);
+  router.patch("/products/:id", updateProduct);
   router.delete("/products/:id", deleteProduct);
 
   return router;
